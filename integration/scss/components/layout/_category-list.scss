@@ -1,0 +1,18 @@
+.category-list {
+    border: {
+        top: $border-width $border-style $border-color-light;
+        bottom: $border-width $border-style $border-color-light;
+    }
+    display: flex;
+    flex: {
+        direction: row;
+        wrap: wrap;
+    }
+    grid-area: category-list;
+    padding: $gutter-large 0;
+
+    .category {
+        // 3 per lines
+        width: calc(100% / 3);
+    }
+}

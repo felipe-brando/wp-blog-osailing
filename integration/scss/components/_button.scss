@@ -1,0 +1,21 @@
+.button {
+    background-color: $color-first;
+    border-radius: .25rem;
+    color: $color-text-second;
+    font: {
+        family: $font-stack-title;
+        size: $font-size-large;
+    }
+    line-height: 2rem;
+    padding: $gutter $gutter-large;
+    text: {
+        align: center;
+        decoration: none;
+    }
+    transition: background-color $duration;
+
+    &:hover {
+        background-color: $color-second;
+        color: $color-text-second;
+    }
+}

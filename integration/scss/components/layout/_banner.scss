@@ -1,0 +1,25 @@
+.banner {
+    grid-area: banner;
+    position: relative;
+
+    &__title {
+        border-bottom: $border-width $border-style $color-text-second;
+        bottom: 10vh;
+        color: $color-text-second;
+        font-size: $font-size-huge;
+        left: 10vh;
+        line-height: 7rem;
+        padding-bottom: $gutter-large;
+        position: absolute;
+        width: 50%;
+    }
+
+    &__image {
+        height: $banner-height;
+        object-fit: cover;
+        right: 0;
+        top: 0;
+        z-index: -1;
+        width: 100%;
+    }
+}

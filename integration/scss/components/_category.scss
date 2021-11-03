@@ -1,0 +1,21 @@
+.category {
+    text-align: center;
+
+    &__name {
+        margin-bottom: $gutter;
+
+        &__link {
+            color: $color-first;
+            font-size: $font-size-small;
+            letter-spacing: .1rem;
+            text: {
+                decoration: none;
+                transform: uppercase;
+            }
+        }
+    }
+
+    &__post-count {
+        font-size: $font-size-large;
+    }
+}

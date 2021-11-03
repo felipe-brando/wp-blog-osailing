@@ -1,0 +1,15 @@
+.footer {
+    grid-area: footer;
+    padding: $gutter-large;
+
+    &__text {
+        color: $color-first;
+        font-size: $font-size-medium;
+        line-height: 2rem;
+        padding: $gutter-large-very;
+    }
+
+    .menu {
+        margin-top: $gutter-large;
+    }
+}

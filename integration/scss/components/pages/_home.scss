@@ -1,0 +1,15 @@
+.home {
+    display: grid;
+    grid-template-areas:
+        "header banner"
+        "header post-list"
+        "header category-list"
+        "header footer";
+    grid-template-columns: $header-width auto;
+    grid-template-rows: $banner-height auto auto;
+
+    .post-list,
+    .category-list {
+        margin-bottom: $gutter-large-very;
+    }
+}

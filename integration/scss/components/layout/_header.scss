@@ -1,0 +1,33 @@
+.header {
+    align-items: center;
+    background-color: $color-first;
+    display: flex;
+    flex-direction: row;
+    height: $header-height;
+    padding: $gutter-large;
+
+    .logo {
+        margin-right: $gutter-large-very * 2;
+    }
+
+    &--vertical {
+        bottom: 0;
+        flex-direction: column;
+        grid-area: header;
+        height: auto;
+        left: 0;
+        position: fixed;
+        top: 0;
+        width: $header-width;
+
+        .logo {
+            height: auto;
+            margin-bottom: $gutter-large-very;
+            margin-right: 0;
+        }
+
+        .menu {
+            width: 100%;
+        }
+    }
+}

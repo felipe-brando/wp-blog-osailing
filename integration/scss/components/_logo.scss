@@ -1,0 +1,36 @@
+.logo {
+    $self: &;
+
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+
+    &__image {
+        height: 2.5rem;
+        margin-right: $gutter;
+    }
+
+    &__text {
+        color: $color-text-second;
+        font: {
+            family: $font-stack-title;
+            weight: 700;
+        }
+        text-decoration: none;
+    }
+
+    &--vertical {
+        flex-direction: column;
+        width: 50%;
+
+        #{$self}__image {
+            height: 5rem;
+            margin-bottom: $gutter;
+            width: 100%;
+        }
+
+        #{$self}__text {
+            font-size: $font-size-medium;
+        }
+    }
+}
