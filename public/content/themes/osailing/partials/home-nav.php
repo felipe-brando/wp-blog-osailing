@@ -1,4 +1,9 @@
-<header class="header header--vertical">
+<?php
+// STEP CUSTOMIZER récupération de la variable "menu-color" afin de l'utiliser dans le thème
+$menuColor = get_theme_mod('menu-color');
+?>
+
+<header class="header header--vertical" style="background-color:<?=$menuColor;?>">
     <div class="logo logo--vertical">
         <img src="<?=get_theme_file_uri('assets/images/logo.svg');?>" class="logo__image" alt="">
         <h1 class="logo__text">oSailing</h1>

@@ -2,6 +2,7 @@
 
 // STEP CUSTOMIZER ne pas oublier d'inclure le/les fichiers de customisation
 
+require __DIR__ . '/customizers/menu-color.php';
 
 require __DIR__ . '/customizers/header-image.php';
 
