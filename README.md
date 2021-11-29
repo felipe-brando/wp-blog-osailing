@@ -1,6 +1,8 @@
 # WordPress Custom Theme
 **WordPress Custom Theme** made from a HTML/CSS integration
 
+!['résultat'](./wp-blog-osailing.jpg)
+
 ## Tasks done :
 * WordPress intall fro command line
 * Create Required Files / Folders for Theme
