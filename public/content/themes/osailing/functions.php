@@ -32,12 +32,10 @@ add_action(
             // get_theme_file_uri calcul automatiquement l'url du fichier demandé
             get_theme_file_uri('assets/css/styles.css') // url du fichier css
         );
-         /*
         wp_enqueue_style(
             'nav-styles',
             get_theme_file_uri('assets/css/nav.css')
         );
-        */
        
         // IMPORTANT WP chargement d'un fichier javascript
         

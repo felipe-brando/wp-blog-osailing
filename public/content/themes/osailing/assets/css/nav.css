@@ -1,0 +1,20 @@
+#menu-nav li {
+    margin: 0 1rem;
+  }
+  
+  #menu-nav .menu-item a {
+    color: #55ddff;
+    display: block;
+    font-size: 1rem;
+    font-family: "Roboto Slab", serif;
+    letter-spacing: 0.1rem;
+    opacity: 0.5;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+    transition: opacity 0.25s;
+  }
+  
+  #menu-nav .menu-item a:hover {
+    text-decoration: underline;
+  }
