@@ -1,0 +1,376 @@
+@import "https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@400;700&family=Roboto:ital,wght@0,400;0,700;1,400;1,700&display=swap";
+/* http://meyerweb.com/eric/tools/css/reset/
+   v5.0.1 | 20191019
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, menu, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+main, menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, main, menu, nav, section {
+  display: block;
+}
+/* HTML5 hidden-attribute fix for newer browsers */
+*[hidden] {
+  display: none;
+}
+body {
+  line-height: 1;
+}
+menu, ol, ul {
+  list-style: none;
+}
+blockquote, q {
+  quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: "";
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+* {
+  box-sizing: border-box;
+}
+html {
+  scroll-behavior: smooth;
+}
+body {
+  font-family: "Roboto", sans-serif;
+}
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Roboto Slab", serif;
+}
+.banner {
+  grid-area: banner;
+  position: relative;
+}
+.banner__title {
+  border-bottom: 1px solid #fff;
+  bottom: 10vh;
+  color: #fff;
+  font-size: 4rem;
+  left: 10vh;
+  line-height: 7rem;
+  padding-bottom: 2rem;
+  position: absolute;
+  width: 50%;
+}
+.banner__image {
+  height: 100vh;
+  object-fit: cover;
+  right: 0;
+  top: 0;
+  z-index: -1;
+  width: 100%;
+}
+.footer {
+  grid-area: footer;
+  padding: 2rem;
+}
+.footer__text {
+  color: #123456;
+  font-size: 1.25rem;
+  line-height: 2rem;
+  padding: 4rem;
+}
+.footer .menu {
+  margin-top: 2rem;
+}
+.header {
+  align-items: center;
+  background-color: #123456;
+  display: flex;
+  flex-direction: row;
+  height: 5vh;
+  padding: 2rem;
+}
+.header .logo {
+  margin-right: 8rem;
+}
+.header--vertical {
+  bottom: 0;
+  flex-direction: column;
+  grid-area: header;
+  height: auto;
+  left: 0;
+  position: fixed;
+  top: 0;
+  width: 25%;
+}
+.header--vertical .logo {
+  height: auto;
+  margin-bottom: 4rem;
+  margin-right: 0;
+}
+.header--vertical .menu {
+  width: 100%;
+}
+.category-list {
+  border-top: 1px solid #ccc;
+  border-bottom: 1px solid #ccc;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  grid-area: category-list;
+  padding: 2rem 0;
+}
+.category-list .category {
+  width: 33.3333333333%;
+}
+.post-list {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  grid-area: post-list;
+}
+.post-list__title {
+  color: #123456;
+  font-size: 2rem;
+  padding: 2rem;
+  text-align: left;
+  text-transform: uppercase;
+  width: 100%;
+}
+.post-list .post {
+  width: 50%;
+}
+.post-list .post:nth-last-child(1), .post-list .post:nth-last-child(2) {
+  border-bottom: 1px solid #ccc;
+}
+.post-list--home {
+  align-items: flex-start;
+  flex-direction: row;
+}
+.post-list--home .post {
+  border-bottom: 1px solid #ccc;
+  width: 33.3333333333%;
+}
+.post-list--home .post--right-border {
+  border-right: 1px solid #ccc;
+}
+.post-list--home .post--left-border {
+  border-left: 1px solid #ccc;
+}
+.post-list--home .button {
+  display: block;
+  margin: 2rem auto 0;
+  width: 50%;
+}
+.button {
+  background-color: #123456;
+  border-radius: 0.25rem;
+  color: #fff;
+  font-family: "Roboto Slab", serif;
+  font-size: 1.5rem;
+  line-height: 2rem;
+  padding: 1rem 2rem;
+  text-align: center;
+  text-decoration: none;
+  transition: background-color 0.5s;
+}
+.button:hover {
+  background-color: #55ddff;
+  color: #fff;
+}
+.category {
+  text-align: center;
+}
+.category__name {
+  margin-bottom: 1rem;
+}
+.category__name__link {
+  color: #123456;
+  font-size: 0.9rem;
+  letter-spacing: 0.1rem;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+.category__post-count {
+  font-size: 1.5rem;
+}
+.logo {
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+}
+.logo__image {
+  height: 2.5rem;
+  margin-right: 1rem;
+}
+.logo__text {
+  color: #fff;
+  font-family: "Roboto Slab", serif;
+  font-weight: 700;
+  text-decoration: none;
+}
+.logo--vertical {
+  flex-direction: column;
+  width: 50%;
+}
+.logo--vertical .logo__image {
+  height: 5rem;
+  margin-bottom: 1rem;
+  width: 100%;
+}
+.logo--vertical .logo__text {
+  font-size: 1.25rem;
+}
+.menu__list {
+  align-items: center;
+  display: flex;
+  justify-content: space-around;
+  flex-direction: row;
+}
+.menu__list__item {
+  margin-right: 2rem;
+  position: relative;
+}
+.menu__list__item__link {
+  color: #55ddff;
+  display: block;
+  font-size: 1rem;
+  font-family: "Roboto Slab", serif;
+  letter-spacing: 0.1rem;
+  opacity: 0.5;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  transition: opacity 0.25s;
+}
+.menu__list__item__link--active, .menu__list__item__link:hover {
+  opacity: 1;
+}
+.menu--vertical .menu__list {
+  flex-direction: column;
+}
+.menu--vertical .menu__list__item {
+  margin-bottom: calc(1rem + 5px);
+  margin-right: 0;
+  padding: 1rem 0;
+  width: 100%;
+}
+.menu--vertical .menu__list__item__link::after {
+  background: linear-gradient(to right, #123456, #55ddff);
+  bottom: 0;
+  content: "";
+  left: 0;
+  position: absolute;
+  right: 0;
+  height: 5px;
+}
+.menu--footer .menu__list__item__link {
+  color: #363636;
+  font-size: 1rem;
+  text-transform: initial;
+}
+.pagination {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 2rem 4rem;
+}
+.post__header {
+  position: relative;
+}
+.post__header__image {
+  height: calc(100vh - 5vh);
+  object-fit: cover;
+  width: 100%;
+}
+.post__header__title {
+  background-color: rgba(0, 0, 0, 0.5);
+  bottom: 10vh;
+  color: #fff;
+  font-size: 4rem;
+  left: 50%;
+  line-height: 5rem;
+  margin: 0 auto;
+  padding: 2rem;
+  position: absolute;
+  text-align: center;
+  transform: translateX(-50%);
+  width: 75%;
+}
+.post__content {
+  color: #363636;
+  font-size: 1.25rem;
+  line-height: 2rem;
+  margin: 4rem 4rem 2rem;
+}
+.post__content p {
+  margin-bottom: 2rem;
+}
+.post__content p:last-child {
+  margin: 0;
+}
+.post__footer {
+  padding: 0 4rem;
+}
+.post__footer__category-link {
+  color: #55ddff;
+  text-decoration: none;
+}
+.post--excerpt {
+  display: flex;
+  flex-direction: column;
+}
+.post--excerpt .post__image {
+  height: 30vh;
+  object-fit: cover;
+  width: 100%;
+}
+.post--excerpt .post__title {
+  color: #363636;
+  font-size: 2rem;
+  padding: 2rem;
+}
+.post--excerpt .post__category-link {
+  color: #123456;
+  padding: 0 2rem 2rem;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+.post--excerpt .post__excerpt {
+  color: #123456;
+  font-size: 1.25rem;
+  padding: 0 2rem 2rem;
+}
+.post--excerpt .post__link {
+  color: #55ddff;
+  font-size: 1.25rem;
+  padding: 0 2rem 2rem;
+  text-decoration: none;
+}
+.home {
+  display: grid;
+  grid-template-areas: "header banner" "header post-list" "header category-list" "header footer";
+  grid-template-columns: 25% auto;
+  grid-template-rows: 100vh auto auto;
+}
+.home .post-list,
+.home .category-list {
+  margin-bottom: 4rem;
+}
+/*# sourceMappingURL=index.8fe50c46.css.map */
