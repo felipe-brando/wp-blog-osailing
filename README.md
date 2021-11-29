@@ -11,4 +11,4 @@
 * Add Dynamic content
 * Create Theme Articles Template
 * Dynamic Menu 
-* Customizers configuration to change the main image and color theme
+* Customizers configuration to change the carousel images and texts.
