@@ -4,7 +4,7 @@
 !['résultat'](./wp-blog-osailing.jpg)
 
 ## Tasks done :
-* WordPress intall fro command line
+* WordPress install from command line
 * Create Required Files / Folders for Theme
 * Activating the New Theme
 * Create Theme Home Page Template
