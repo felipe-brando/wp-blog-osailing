@@ -14,7 +14,12 @@ get_header();
  
   <section class="banner" id="banner">
     <h2 class="banner__title">Cap sur le grand large</h2>
-    <img src="<?=get_theme_file_uri('assets/images/banner.jpg');?>" class="banner__image">
+
+    <?php
+      $headerImageURL = get_theme_mod('header-image');
+    ?>
+
+    <img src="<?=$headerImageURL;?>" class="banner__image">
   </section>
   <main class="post-list post-list--home" id="post-list">
     <?php

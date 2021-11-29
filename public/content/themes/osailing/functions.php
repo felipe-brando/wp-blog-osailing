@@ -1,5 +1,10 @@
 <?php
 
+// STEP CUSTOMIZER ne pas oublier d'inclure le/les fichiers de customisation
+
+
+require __DIR__ . '/customizers/header-image.php';
+
 // hook wordpress pour configurer les features du thème
 // Nous écoutons un event nommé 'after_setup_theme'
 add_action(
@@ -35,6 +40,11 @@ add_action(
         wp_enqueue_style(
             'nav-styles',
             get_theme_file_uri('assets/css/nav.css')
+        );
+
+        wp_enqueue_style(
+            'customizer-style',
+            get_theme_file_uri('assets/css/customizers.css'),
         );
        
         // IMPORTANT WP chargement d'un fichier javascript
